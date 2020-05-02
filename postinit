@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# wireguard
+mkdir -p /usr/local/etc/wireguard && cp /root/wg0.conf /usr/local/etc/wireguard/wg0.conf && /usr/local/etc/rc.d/wireguard start
+
+# pf
+cp /root/pf.conf /usr/local/etc/ && /etc/rc.d/pf start
